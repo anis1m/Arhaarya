@@ -1,0 +1,64 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  justify-content: space-between;
+  height: fit-content;
+  padding: 1rem 2rem;
+  position: fixed;
+  z-index: 5;
+  background-color: white;
+}
+
+.below-navbar {
+  width: 100%;
+  height: 102px;
+}
+
+.navbar figure {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navbar figure img {
+  width: 90px;
+  height: 70px;
+  mix-blend-mode: multiply;
+}
+.navbar h1 {
+  font-size: 2.5rem;
+  font-size: 1000;
+}
+
+.navbar blockquote mark {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.navbar blockquote mark h3:hover {
+  text-decoration: underline;
+}
+
+.navbar blockquote {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar blockquote button {
+  background-color: red;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border: 0;
+  border-radius: 2rem;
+}
+
+.fa-search {
+  font-size: 1.5rem;
+}

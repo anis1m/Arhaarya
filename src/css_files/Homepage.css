@@ -1,0 +1,39 @@
+.homepage {
+  width: 100%;
+  position: relative;
+}
+
+.homepage-cards {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 2rem auto;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.homepage-card-header {
+  width: 50%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.homepage-card-header hr {
+  width: 3rem;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: red;
+  margin: 0 auto;
+}
+
+.homepage-card-header h1 {
+  font-size: 2.5rem;
+}
+
+.homepage-card-header p {
+  font-size: 1.2rem;
+  text-align: center;
+}

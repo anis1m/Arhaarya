@@ -1,0 +1,70 @@
+.hero {
+  width: 100%;
+  height: 85vh;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  width: 100%;
+  height: 85vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero aside {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+.hero aside p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.hero aside h1 {
+  font-size: 2.5rem;
+}
+
+.hero aside blockquote {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.hero aside blockquote button {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.hero aside blockquote button:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.hero aside blockquote button {
+  background-color: white;
+  color: red;
+  font-weight: 600;
+  border: 2px solid white;
+}
