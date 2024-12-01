@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Cards from "./homepage/cards";
+import Cards from "./homepage/Cards";
 import "../css_files/Homepage.css";
 import Navbar from "./homepage/Navbar";
 import Hero from "./homepage/Hero";
