@@ -11,7 +11,7 @@ function Footer() {
             <hr />
             <figure>
               <img src="/Image 661.png" />
-              <h1>METROLINK CITY</h1>
+              <h1>ARHAARYA</h1>
             </figure>
             <p>621 Columbia Rd #38, Magnolia</p>
             <mark>

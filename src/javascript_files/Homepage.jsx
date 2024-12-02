@@ -6,6 +6,7 @@ import Hero from "./homepage/Hero";
 import Footer from "./homepage/Footer";
 import Goal from "./homepage/Goal";
 import Enquiry from "./Enquiry";
+import Gallery from "./homepage/Gallery";
 
 function Homepage() {
   const [close, setclose] = useState(false);
@@ -36,6 +37,7 @@ function Homepage() {
           <Cards isclose={isclose} />
           <Cards isclose={isclose} />
         </div>
+        <Gallery />
         <Footer />
         {close && <Enquiry isclose={isclose} />}
       </section>

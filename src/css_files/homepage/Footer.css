@@ -81,3 +81,23 @@
   align-items: center;
   gap: 1rem;
 }
+
+@media (max-width: 480px) {
+  .footer div {
+    width: 90%;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+
+  .footer div aside figure img {
+    width: 100px;
+  }
+
+  .below-footer div {
+    width: 90%;
+  }
+
+  .below-footer blockquote {
+    display: none;
+  }
+}

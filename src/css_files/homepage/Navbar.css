@@ -62,3 +62,56 @@
 .fa-search {
   font-size: 1.5rem;
 }
+
+#hamberger_menu {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  #hamberger_menu {
+    display: block;
+    background-color: transparent;
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+
+  .navbar blockquote {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    z-index: 7;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+
+  .navbar blockquote mark {
+    padding: 0.5rem;
+    justify-content: space-between;
+    border-bottom: 1px dashed gray;
+  }
+
+  .navbar blockquote button {
+    padding: 0.5rem;
+  }
+
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  .navbar figure img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .navbar figure h1 {
+    font-size: 1.5rem;
+  }
+
+  .below-navbar {
+    height: 75px;
+  }
+}

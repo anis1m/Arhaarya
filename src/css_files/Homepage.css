@@ -31,9 +31,25 @@
 
 .homepage-card-header h1 {
   font-size: 2.5rem;
+  text-align: center;
 }
 
 .homepage-card-header p {
   font-size: 1.2rem;
   text-align: center;
+}
+
+@media (max-width: 480px) {
+  .homepage-cards {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+
+  .homepage-card-header {
+    width: 90%;
+  }
+
+  .homepage-card-header p {
+    text-align: left;
+  }
 }

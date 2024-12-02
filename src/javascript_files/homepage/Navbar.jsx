@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../../css_files/homepage/Navbar.css";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+  const show = useRef();
+  const nav = useNavigate();
   return (
     <>
       <nav className="navbar">
@@ -14,11 +17,19 @@ function Navbar() {
           }}
         >
           <img src="/Image 661.png" />
-          <h1>METROLINK CITY</h1>
+          <h1>ARHAARYA</h1>
         </figure>
 
-        <blockquote>
-          <mark>
+        <blockquote ref={show}>
+          <mark
+            onClick={() => {
+              nav("/");
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
+          >
             <h3>Home</h3>
             <i class="fa-solid fa-angle-down" />
           </mark>
@@ -41,10 +52,23 @@ function Navbar() {
             <h3>Contact Us</h3>
             <i class="fa-solid fa-angle-down" />
           </mark>
-
-          <i class="fa-solid fa-search"></i>
+          <mark>
+            <i class="fa-solid fa-search"></i>
+          </mark>
           <button>Ask For Quote</button>
         </blockquote>
+        <mark
+          id="hamberger_menu"
+          onClick={() => {
+            if (show.current.style.display === "block") {
+              show.current.style.display = "none";
+            } else {
+              show.current.style.display = "block";
+            }
+          }}
+        >
+          <i class="fa-solid fa-bars"></i>
+        </mark>
       </nav>
       <div className="below-navbar"></div>
     </>
