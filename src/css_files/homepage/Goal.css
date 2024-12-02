@@ -97,6 +97,10 @@
     position: unset;
   }
 
+  .goal-header p {
+    text-align: left;
+  }
+
   .goal {
     margin: 1rem 0;
   }

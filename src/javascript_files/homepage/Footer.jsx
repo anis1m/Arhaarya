@@ -13,7 +13,7 @@ function Footer() {
               <img src="/Image 661.png" />
               <h1>ARHAARYA</h1>
             </figure>
-            <p>621 Columbia Rd #38, Magnolia</p>
+            <p>Saidnagar, near viskarma mandir , Darbhanga.</p>
             <mark>
               <i class="fa-solid fa-phone"></i>
               +123 456 7890

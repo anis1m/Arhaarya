@@ -11,8 +11,13 @@ function Goal() {
           <h3>Best Way To Sale Property!</h3>
           <h1>About Our Goal</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempus
-            libero consectetur, aliquam mi vel, rhoncus diam.
+            Our aim is to acquire, develop, and manage land assets to maximize
+            value through strategic investments, efficient utilization, and
+            sustainable development. This may involve buying and selling land,
+            leasing, or transforming raw land into profitable ventures such as
+            residential communities, commercial spaces, or agricultural
+            operations, all while ensuring compliance with regulatory and
+            environmental standards.
           </p>
         </blockquote>
         <figure>
