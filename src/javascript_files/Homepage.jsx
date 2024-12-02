@@ -40,37 +40,37 @@ function Homepage() {
             isclose={isclose}
             land={land1}
             title={"In League City 1.37 Acres property"}
-            location={"League City, Texas, USA"}
+            location={"Plot 1"}
           />
           <Cards
             isclose={isclose}
             land={land2}
             title={"In League City 1.32 Acres property"}
-            location={"League City, Texas, USA"}
+            location={"Plot 2"}
           />
           <Cards
             isclose={isclose}
             land={land3}
             title={"In League City 0.42 Acres property"}
-            location={"League City, Texas, USA"}
+            location={"Plot 3"}
           />
           <Cards
             isclose={isclose}
             land={land4}
             title={"In Oak Harbor 0.52 Acre property"}
-            location={"Oak Harbor, WA, USA"}
+            location={"Plot 4"}
           />
           <Cards
             isclose={isclose}
             land={land5}
             title={"In Oak Harbor 0.56 Acre property"}
-            location={"Oak Harbor, WA, USA"}
+            location={"Plot 5"}
           />
           <Cards
             isclose={isclose}
             land={land6}
             title={"In Oak Harbor 0.57 Acre property"}
-            location={"Oak Harbor, WA, USA"}
+            location={"Plot 6"}
           />
         </div>
         <Gallery />

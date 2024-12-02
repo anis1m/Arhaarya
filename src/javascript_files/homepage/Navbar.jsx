@@ -10,6 +10,7 @@ function Navbar() {
       <nav className="navbar">
         <figure
           onClick={() => {
+            nav("/");
             window.scrollTo({
               top: 0,
               behavior: "smooth",
@@ -33,7 +34,7 @@ function Navbar() {
             <h3>Home</h3>
             <i class="fa-solid fa-angle-down" />
           </mark>
-          <mark>
+          <mark onClick={() => nav("/about")}>
             <h3>About Us</h3>
             <i class="fa-solid fa-angle-down" />
           </mark>
