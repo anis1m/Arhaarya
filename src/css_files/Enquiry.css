@@ -63,3 +63,9 @@
 #close-form i {
   font-size: 2rem;
 }
+
+@media (max-width: 480px) {
+  .enquiry form {
+    width: 95%;
+  }
+}
