@@ -2,7 +2,6 @@
   width: 100%;
   height: 100%;
   border: 1px solid lightgray;
-  cursor: pointer;
 }
 .card img {
   width: 100%;
@@ -71,4 +70,23 @@
 .card-footer mark:nth-child(1),
 .card-footer mark:nth-child(2) {
   border-right: 1px solid black;
+}
+
+.card aside button {
+  padding: 0.5rem;
+  background-color: red;
+  color: white;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 0;
+}
+
+@media (max-width: 480px) {
+  .card aside button {
+    width: 100%;
+  }
 }

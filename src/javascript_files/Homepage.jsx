@@ -7,6 +7,12 @@ import Footer from "./homepage/Footer";
 import Goal from "./homepage/Goal";
 import Enquiry from "./Enquiry";
 import Gallery from "./homepage/Gallery";
+import land1 from "../assets/Land_Images/WhatsApp Image 2024-11-27 at 6.28.28 AM (1).jpeg";
+import land2 from "../assets/Land_Images/WhatsApp Image 2024-11-27 at 6.28.28 AM.jpeg";
+import land3 from "../assets/Land_Images/WhatsApp Image 2024-11-27 at 6.28.29 AM.jpeg";
+import land4 from "../assets/Land_Images/WhatsApp Image 2024-11-27 at 6.28.30 AM.jpeg";
+import land5 from "../assets/Land_Images/WhatsApp Image 2024-11-27 at 6.28.31 AM.jpeg";
+import land6 from "../assets/Land_Images/WhatsApp Image 2024-11-27 at 6.28.33 AM.jpeg";
 
 function Homepage() {
   const [close, setclose] = useState(false);
@@ -30,12 +36,42 @@ function Homepage() {
         </blockquote>
 
         <div className="homepage-cards">
-          <Cards isclose={isclose} />
-          <Cards isclose={isclose} />
-          <Cards isclose={isclose} />
-          <Cards isclose={isclose} />
-          <Cards isclose={isclose} />
-          <Cards isclose={isclose} />
+          <Cards
+            isclose={isclose}
+            land={land1}
+            title={"In League City 1.37 Acres property"}
+            location={"League City, Texas, USA"}
+          />
+          <Cards
+            isclose={isclose}
+            land={land2}
+            title={"In League City 1.32 Acres property"}
+            location={"League City, Texas, USA"}
+          />
+          <Cards
+            isclose={isclose}
+            land={land3}
+            title={"In League City 0.42 Acres property"}
+            location={"League City, Texas, USA"}
+          />
+          <Cards
+            isclose={isclose}
+            land={land4}
+            title={"In Oak Harbor 0.52 Acre property"}
+            location={"Oak Harbor, WA, USA"}
+          />
+          <Cards
+            isclose={isclose}
+            land={land5}
+            title={"In Oak Harbor 0.56 Acre property"}
+            location={"Oak Harbor, WA, USA"}
+          />
+          <Cards
+            isclose={isclose}
+            land={land6}
+            title={"In Oak Harbor 0.57 Acre property"}
+            location={"Oak Harbor, WA, USA"}
+          />
         </div>
         <Gallery />
         <Footer />

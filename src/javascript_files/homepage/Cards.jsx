@@ -1,15 +1,15 @@
 import React from "react";
-import land1 from "../../assets/Land_Images/WhatsApp Image 2024-11-27 at 6.28.28 AM (1).jpeg";
+
 import "../../css_files/homepage/Cards.css";
 
-function Cards({ isclose }) {
+function Cards({ isclose, land, title, location }) {
   return (
     <>
-      <div className="card" onClick={() => isclose(true)}>
-        <img src={land1} />
+      <div className="card">
+        <img src={land} />
         <aside>
-          <h1>In League City 1.37 Acres property</h1>
-          <h3>League City, Texas, USA</h3>
+          <h1>{title}</h1>
+          <h3>{location}</h3>
           {/*
           <blockquote>
             <button>5</button>
@@ -19,7 +19,9 @@ function Cards({ isclose }) {
             <i class="fa-regular fa-star"></i>
             <i class="fa-regular fa-star"></i>
           </blockquote>*/}
+          <button onClick={() => isclose(true)}>Enquire Now</button>
         </aside>
+
         {/*<blockquote className="card-footer">
           <mark>
             <h4>$55000</h4>
