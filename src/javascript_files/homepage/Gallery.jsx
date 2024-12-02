@@ -12,13 +12,13 @@ function Gallery() {
       <aside>
         <img
           src={i1}
+          ref={(el) => (showimage.current[0] = el)}
           onMouseEnter={() => {
             showimage.current[0].style.position = "absolute";
             showimage.current[0].style.width = "100%";
             showimage.current[0].style.top = "-20rem";
             showimage.current[0].style.left = 0;
           }}
-          ref={(el) => (showimage.current[0] = el)}
           onMouseLeave={() => {
             showimage.current[0].style.position = "unset";
           }}
