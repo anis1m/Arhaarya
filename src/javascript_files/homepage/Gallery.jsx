@@ -16,7 +16,7 @@ function Gallery() {
           onMouseEnter={() => {
             showimage.current[0].style.position = "absolute";
             showimage.current[0].style.width = "100%";
-            showimage.current[0].style.top = "-20rem";
+            showimage.current[0].style.bottom = "5rem";
             showimage.current[0].style.left = 0;
           }}
           onMouseLeave={() => {
@@ -29,7 +29,7 @@ function Gallery() {
           onMouseEnter={() => {
             showimage.current[1].style.position = "absolute";
             showimage.current[1].style.width = "100%";
-            showimage.current[1].style.top = "-20rem";
+            showimage.current[1].style.bottom = "5rem";
             showimage.current[1].style.left = 0;
           }}
           onMouseLeave={() => {
