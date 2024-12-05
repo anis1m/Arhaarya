@@ -20,6 +20,7 @@ function Homepage() {
   const [footerheight, setfooterheight] = useState(0);
   const [aboutUsHeight, setaboutUsheight] = useState(0);
   const [services, servicesheight] = useState(0);
+  const [gallery, galleryheight] = useState(0);
   const sh = useRef();
 
   function isclose(issetclose) {
@@ -33,6 +34,9 @@ function Homepage() {
   function sash(setash) {
     setaboutUsheight(setash);
   }
+  function gheight(setgheight) {
+    galleryheight(setgheight);
+  }
 
   useEffect(() => {
     servicesheight(sh.current.scrollHeight);
@@ -41,7 +45,12 @@ function Homepage() {
   return (
     <>
       <section className="homepage">
-        <Navbar fh={footerheight} ash={aboutUsHeight} sc={services} />
+        <Navbar
+          fh={footerheight}
+          ash={aboutUsHeight}
+          sc={services}
+          gallery={gallery}
+        />
         <Hero />
         <Goal />
         <blockquote className="homepage-card-header">
@@ -92,7 +101,7 @@ function Homepage() {
             location={"Plot 6"}
           />
         </div>
-        <Gallery />
+        <Gallery gheight={gheight} />
         <AboutUs sash={sash} />
         <Footer sfh={sfh} />
         {close && <Enquiry isclose={isclose} />}

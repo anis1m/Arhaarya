@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "../../css_files/homepage/Navbar.css";
 import { useNavigate } from "react-router-dom";
 
-function Navbar({ fh, ash, sc }) {
+function Navbar({ fh, ash, sc, gallery }) {
   const show = useRef();
   const nav = useNavigate();
 
@@ -38,7 +38,7 @@ function Navbar({ fh, ash, sc }) {
           <mark
             onClick={() => {
               window.scrollTo({
-                top: document.documentElement.scrollHeight - 1.5 * (fh + ash),
+                top: document.documentElement.scrollHeight - 1.2 * (fh + ash),
                 behavior: "smooth",
               });
             }}
@@ -50,7 +50,11 @@ function Navbar({ fh, ash, sc }) {
             onClick={() => {
               window.scrollTo({
                 top:
-                  document.documentElement.scrollHeight - 1.5 * (fh + ash + sc),
+                  document.documentElement.scrollHeight -
+                  fh +
+                  ash +
+                  gallery +
+                  sc,
                 behavior: "smooth",
               });
             }}
@@ -72,7 +76,9 @@ function Navbar({ fh, ash, sc }) {
           <mark
             onClick={() => {
               window.scrollTo({
-                top: document.documentElement.scrollHeight - 1.8 * (fh + ash),
+                top:
+                  document.documentElement.scrollHeight -
+                  1.1 * (fh + ash + gallery),
                 behavior: "smooth",
               });
             }}

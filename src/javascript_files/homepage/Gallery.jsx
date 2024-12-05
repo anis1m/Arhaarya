@@ -1,12 +1,17 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "../../css_files/homepage/Gallery.css";
 import i1 from "../../assets/Image 662.png";
 import i2 from "../../assets/Image 663.png";
 
-function Gallery() {
+function Gallery({ gheight }) {
   const showimage = useRef([]);
+  const ght = useRef();
+
+  useEffect(() => {
+    gheight(ght.current.scrollHeight);
+  }, []);
   return (
-    <div className="gallery">
+    <div className="gallery" ref={ght}>
       <hr />
       <h1>Gallery</h1>
       <aside>
