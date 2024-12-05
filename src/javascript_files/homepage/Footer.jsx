@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../../css_files/homepage/Footer.css";
 
-function Footer() {
+function Footer({ sfh }) {
+  const footerheight = useRef();
+
+  useEffect(() => {
+    sfh(footerheight.current.scrollHeight);
+  }, []);
+
   return (
     <>
-      <footer className="footer">
+      <footer className="footer" ref={footerheight}>
         <div>
           <aside>
             <h2>About Company</h2>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Cards from "./homepage/Cards";
 import "../css_files/Homepage.css";
 import Navbar from "./homepage/Navbar";
@@ -13,29 +13,48 @@ import land3 from "../assets/Land_Images/WhatsApp Image 2024-11-27 at 6.28.29 AM
 import land4 from "../assets/Land_Images/WhatsApp Image 2024-11-27 at 6.28.30 AM.jpeg";
 import land5 from "../assets/Land_Images/WhatsApp Image 2024-11-27 at 6.28.31 AM.jpeg";
 import land6 from "../assets/Land_Images/WhatsApp Image 2024-11-27 at 6.28.33 AM.jpeg";
+import AboutUs from "./AboutUs";
 
 function Homepage() {
   const [close, setclose] = useState(false);
+  const [footerheight, setfooterheight] = useState(0);
+  const [aboutUsHeight, setaboutUsheight] = useState(0);
+  const [services, servicesheight] = useState(0);
+  const sh = useRef();
 
   function isclose(issetclose) {
     setclose(issetclose);
   }
+
+  function sfh(setheight) {
+    setfooterheight(setheight);
+  }
+
+  function sash(setash) {
+    setaboutUsheight(setash);
+  }
+
+  useEffect(() => {
+    servicesheight(sh.current.scrollHeight);
+  }, []);
+
   return (
     <>
       <section className="homepage">
-        <Navbar />
+        <Navbar fh={footerheight} ash={aboutUsHeight} sc={services} />
         <Hero />
         <Goal />
         <blockquote className="homepage-card-header">
           <hr />
           <h1>Latest Properties for Rent</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempus
-            libero consectetur, aliquam mi vel, rhoncus diam.
+            Beautiful residential land located in a peaceful neighborhood, ideal
+            for a mobile home or tiny house. Stunning mountain views, easy
+            access to utilities, and a short drive to local amenities.
           </p>
         </blockquote>
 
-        <div className="homepage-cards">
+        <div className="homepage-cards" ref={sh}>
           <Cards
             isclose={isclose}
             land={land1}
@@ -74,7 +93,8 @@ function Homepage() {
           />
         </div>
         <Gallery />
-        <Footer />
+        <AboutUs sash={sash} />
+        <Footer sfh={sfh} />
         {close && <Enquiry isclose={isclose} />}
       </section>
     </>

@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "../css_files/AboutUs.css";
 import Navbar from "./homepage/Navbar";
 
-function AboutUs() {
+function AboutUs({ sash }) {
+  const aboutusheight = useRef();
+  useEffect(() => {
+    sash(aboutusheight.current.scrollHeight);
+  }, []);
   return (
     <>
-      <Navbar />
-      <section className="about-us">
+      <section className="about-us" ref={aboutusheight}>
         <h1>About Us</h1>
         <p>
           At Arhaarya, we're dedicated to transforming the way people invest in

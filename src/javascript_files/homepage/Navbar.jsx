@@ -1,10 +1,11 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../../css_files/homepage/Navbar.css";
 import { useNavigate } from "react-router-dom";
 
-function Navbar() {
+function Navbar({ fh, ash, sc }) {
   const show = useRef();
   const nav = useNavigate();
+
   return (
     <>
       <nav className="navbar">
@@ -34,23 +35,49 @@ function Navbar() {
             <h3>Home</h3>
             <i class="fa-solid fa-angle-down" />
           </mark>
-          <mark onClick={() => nav("/about")}>
+          <mark
+            onClick={() => {
+              window.scrollTo({
+                top: document.documentElement.scrollHeight - 1.5 * (fh + ash),
+                behavior: "smooth",
+              });
+            }}
+          >
             <h3>About Us</h3>
             <i class="fa-solid fa-angle-down" />
           </mark>
-          <mark>
+          <mark
+            onClick={() => {
+              window.scrollTo({
+                top:
+                  document.documentElement.scrollHeight - 1.5 * (fh + ash + sc),
+                behavior: "smooth",
+              });
+            }}
+          >
             <h3>Services</h3>
             <i class="fa-solid fa-angle-down" />
           </mark>
           <mark
             onClick={() => {
               window.scrollTo({
-                top: document.documentElement.scrollHeight,
+                top: document.documentElement.scrollHeight - 1.5 * fh,
                 behavior: "smooth",
               });
             }}
           >
             <h3>Contact Us</h3>
+            <i class="fa-solid fa-angle-down" />
+          </mark>
+          <mark
+            onClick={() => {
+              window.scrollTo({
+                top: document.documentElement.scrollHeight - 1.8 * (fh + ash),
+                behavior: "smooth",
+              });
+            }}
+          >
+            <h3>Gallery</h3>
             <i class="fa-solid fa-angle-down" />
           </mark>
           <mark>
