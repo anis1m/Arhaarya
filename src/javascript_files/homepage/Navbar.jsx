@@ -38,7 +38,7 @@ function Navbar({ fh, ash, sc, gallery }) {
           <mark
             onClick={() => {
               window.scrollTo({
-                top: document.documentElement.scrollHeight - 1.2 * (fh + ash),
+                top: document.documentElement.scrollHeight - 1.3 * (fh + ash),
                 behavior: "smooth",
               });
             }}
@@ -51,10 +51,7 @@ function Navbar({ fh, ash, sc, gallery }) {
               window.scrollTo({
                 top:
                   document.documentElement.scrollHeight -
-                  fh +
-                  ash +
-                  gallery +
-                  sc,
+                  1.3 * (fh + ash + gallery + sc),
                 behavior: "smooth",
               });
             }}
@@ -78,7 +75,7 @@ function Navbar({ fh, ash, sc, gallery }) {
               window.scrollTo({
                 top:
                   document.documentElement.scrollHeight -
-                  1.1 * (fh + ash + gallery),
+                  1.3 * (fh + ash + gallery),
                 behavior: "smooth",
               });
             }}
