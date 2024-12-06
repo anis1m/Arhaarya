@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "../../css_files/homepage/Navbar.css";
 import { useNavigate } from "react-router-dom";
 
-function Navbar({ fh, ash, sc, gallery }) {
+function Navbar({ fh, ash, sc, gallery, isclose }) {
   const show = useRef();
   const nav = useNavigate();
 
@@ -83,10 +83,8 @@ function Navbar({ fh, ash, sc, gallery }) {
             <h3>Gallery</h3>
             <i class="fa-solid fa-angle-down" />
           </mark>
-          <mark>
-            <i class="fa-solid fa-search"></i>
-          </mark>
-          <button>Ask For Quote</button>
+
+          <button onClick={() => isclose(true)}>Ask For Quote</button>
         </blockquote>
         <mark
           id="hamberger_menu"

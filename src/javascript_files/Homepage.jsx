@@ -50,6 +50,7 @@ function Homepage() {
           ash={aboutUsHeight}
           sc={services}
           gallery={gallery}
+          isclose={isclose}
         />
         <Hero />
         <Goal />
