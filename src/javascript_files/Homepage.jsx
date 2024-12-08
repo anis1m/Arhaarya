@@ -56,7 +56,7 @@ function Homepage() {
         <Goal />
         <blockquote className="homepage-card-header">
           <hr />
-          <h1>Latest Properties for Rent</h1>
+          <h1>Latest Properties for Sale</h1>
           <p>
             Beautiful residential land located in a peaceful neighborhood, ideal
             for a mobile home or tiny house. Stunning mountain views, easy
