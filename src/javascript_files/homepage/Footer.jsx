@@ -25,7 +25,7 @@ function Footer({ sfh }) {
             <p>Saidnagar, near viskarma mandir , Darbhanga.</p>
             <mark>
               <i class="fa-solid fa-phone"></i>
-              +123 456 7890
+              +91 7004995400
             </mark>
             <mark>
               <i class="fa-solid fa-envelope"></i>
