@@ -10,6 +10,7 @@ function AboutUs({ sash }) {
   return (
     <>
       <section className="about-us" ref={aboutusheight}>
+        <hr />
         <h1>About Us</h1>
         <p>
           At Arhaarya, we're dedicated to transforming the way people invest in

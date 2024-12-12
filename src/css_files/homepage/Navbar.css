@@ -19,6 +19,7 @@
 .navbar figure {
   display: flex;
   align-items: center;
+  gap: 1rem;
   cursor: pointer;
 }
 
@@ -27,7 +28,12 @@
   height: 70px;
   mix-blend-mode: multiply;
 }
-.navbar h1 {
+
+.navbar figure mark {
+  background-color: transparent;
+  text-align: center;
+}
+.navbar figure mark h1 {
   font-size: 2.5rem;
   font-size: 1000;
 }

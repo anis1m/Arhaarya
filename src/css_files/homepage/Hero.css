@@ -4,6 +4,38 @@
   position: relative;
 }
 
+#previous-hero-image {
+  position: absolute;
+  top: 40vh;
+  left: 0;
+  background-color: transparent;
+  border: 0;
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 4;
+}
+
+#previous-hero-image i {
+  font-size: 3rem;
+  color: white;
+}
+
+#next-hero-image {
+  position: absolute;
+  top: 40vh;
+  right: 0;
+  background-color: transparent;
+  border: 0;
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 4;
+}
+
+#next-hero-image i {
+  font-size: 3rem;
+  color: white;
+}
+
 .hero::before {
   content: "";
   width: 100%;
@@ -11,7 +43,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
 

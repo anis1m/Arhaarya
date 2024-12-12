@@ -68,37 +68,37 @@ function Homepage() {
           <Cards
             isclose={isclose}
             land={land1}
-            title={"In League City 1.37 Acres property"}
+            title={"In Metrolink City 1.37 Acres property"}
             location={"Plot 1"}
           />
           <Cards
             isclose={isclose}
             land={land2}
-            title={"In League City 1.32 Acres property"}
+            title={"In Metrolink City 1.32 Acres property"}
             location={"Plot 2"}
           />
           <Cards
             isclose={isclose}
             land={land3}
-            title={"In League City 0.42 Acres property"}
+            title={"In Metrolink City 0.42 Acres property"}
             location={"Plot 3"}
           />
           <Cards
             isclose={isclose}
             land={land4}
-            title={"In Oak Harbor 0.52 Acre property"}
+            title={"In Metrolink City 0.52 Acre property"}
             location={"Plot 4"}
           />
           <Cards
             isclose={isclose}
             land={land5}
-            title={"In Oak Harbor 0.56 Acre property"}
+            title={"In Metrolink City 0.56 Acre property"}
             location={"Plot 5"}
           />
           <Cards
             isclose={isclose}
             land={land6}
-            title={"In Oak Harbor 0.57 Acre property"}
+            title={"In Metrolink City 0.57 Acre property"}
             location={"Plot 6"}
           />
         </div>

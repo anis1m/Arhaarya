@@ -17,7 +17,10 @@ function Footer({ sfh }) {
             <hr />
             <figure>
               <img src="/Image 661.png" />
-              <h1>ARHAARYA</h1>
+              <mark>
+                <h1>ARHAARYA</h1>
+                <h4>PARTNETS PVT. LTD.</h4>
+              </mark>
             </figure>
             <p>Saidnagar, near viskarma mandir , Darbhanga.</p>
             <mark>
@@ -27,6 +30,10 @@ function Footer({ sfh }) {
             <mark>
               <i class="fa-solid fa-envelope"></i>
               support@example.com
+            </mark>
+            <mark>
+              <i class="fa-solid fa-city"></i>
+              GSTN:
             </mark>
             <mark>
               <i class="fa-brands fa-facebook"></i>
@@ -53,15 +60,15 @@ function Footer({ sfh }) {
             <h2>Hot Property</h2>
             <hr />
             <blockquote>
-              <h4>In League City 1.37 Acres Property</h4>
+              <h4>In Metrolink City 1.37 Acres Property</h4>
               <p>By Arhaarya | August 17, 2024</p>
             </blockquote>
             <blockquote>
-              <h4>In League City 1.32 Acres Property</h4>
+              <h4>In Metrolink City 1.32 Acres Property</h4>
               <p>By Arhaarya | August 19, 2024</p>
             </blockquote>
             <blockquote>
-              <h4>In League City 0.42 Acres Property</h4>
+              <h4>In Metrolink City 0.42 Acres Property</h4>
               <p>By Arhaarya | August 20, 2024</p>
             </blockquote>
           </aside>

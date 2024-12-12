@@ -19,7 +19,10 @@ function Navbar({ fh, ash, sc, gallery, isclose }) {
           }}
         >
           <img src="/Image 661.png" />
-          <h1>ARHAARYA</h1>
+          <mark>
+            <h1>ARHAARYA</h1>
+            <h4>PARTNERS PVT. LTD.</h4>
+          </mark>
         </figure>
 
         <blockquote ref={show}>

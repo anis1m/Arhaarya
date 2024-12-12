@@ -6,6 +6,14 @@
   gap: 1rem;
 }
 
+.about-us hr {
+  width: 3rem;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: red;
+  margin: 0 auto;
+}
+
 .about-us h1 {
   font-size: 2.5rem;
   text-align: center;

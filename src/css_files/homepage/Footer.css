@@ -29,8 +29,15 @@
   width: 120px;
 }
 
-.footer div aside h1 {
+.footer div aside figure h1 {
   font-size: 2.5rem;
+}
+
+.footer div aside figure mark {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .footer div aside hr {
