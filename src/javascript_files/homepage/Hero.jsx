@@ -24,9 +24,9 @@ function Hero() {
   }
 
   useEffect(() => {
-    const intervalId = setInterval(nextimage, 5000);
+    const intervalId = setTimeout(nextimage, 5000);
 
-    return () => clearInterval(intervalId);
+    return () => clearTimeout(intervalId);
   }, [imageindex]);
 
   return (

@@ -114,4 +114,12 @@
   .hero::before {
     height: 70vh;
   }
+
+  #previous-hero-image {
+    top: 30vh;
+  }
+
+  #next-hero-image {
+    top: 30vh;
+  }
 }

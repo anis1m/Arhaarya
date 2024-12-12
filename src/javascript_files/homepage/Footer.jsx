@@ -29,11 +29,11 @@ function Footer({ sfh }) {
             </mark>
             <mark>
               <i class="fa-solid fa-envelope"></i>
-              support@example.com
+              Arhaaryapartnerspvtltd@gmail.com
             </mark>
             <mark>
               <i class="fa-solid fa-city"></i>
-              GSTN:
+              CIN: U68100BR2024PTC071908
             </mark>
             <mark>
               <i class="fa-brands fa-facebook"></i>
